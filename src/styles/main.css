@@ -1,0 +1,30 @@
+@import 'primereact/resources/themes/saga-purple/theme.css';
+@import 'primereact/resources/primereact.min.css';
+@import 'primeicons/primeicons.css';
+
+/* 2) Now declare Tailwind’s cascade layers */
+@layer tailwind-base, tailwind-utilities;
+
+/* 2a) Tailwind base (Preflight) */
+@layer tailwind-base {
+  @tailwind base;
+}
+
+@layer base {
+  /* Apply your custom font to all text */
+  html, body {
+    @apply font-sans;
+  }
+  /* Exclude code/pre blocks: use monospace for code */
+  pre, code, kbd, samp {
+    @apply font-mono;
+  }
+}
+
+/* 2b) Tailwind components & utilities */
+@layer tailwind-utilities {
+  @tailwind components;
+  @tailwind utilities;
+}
+
+

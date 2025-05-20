@@ -1,0 +1,16 @@
+---
+import { SITE_LOGO, SITE_TITLE } from "../config";
+import Menus from "./menus.astro";
+import LogoSwap from "./logo_swap.jsx"
+---
+
+<header
+  class="sticky z-50 top-0 bg-white/80 backdrop-blur-xl transition-all select-none bg-gradient-to-b from-purple-50"
+>
+  <div class="flex flex-row gap-6 items-center justify-between max-w-screen-md mx-auto h-24 px-4 sm:px-6">
+    <a href="/" class="flex flex-row items-center justify-center gap-2">
+      <LogoSwap client:load />
+    </a>
+    <Menus />
+  </div>
+</header>

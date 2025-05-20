@@ -1,0 +1,81 @@
+---
+import Layout from "../components/layout.astro";
+import Content from "../components/post/post-content.astro";
+import { index_post } from "../helpers";
+import Leaderboard from '../components/Leaderboard.jsx';
+---
+
+<Layout title={index_post.data.title} description={index_post.data.description}>
+
+<div class="flex flex-col gap-8 md:w-5/6 px-4 py-12 sm:px-8 mx-auto">
+    {
+      index_post.data.logo_title && (
+        <img src={index_post.data.logo_title} alt="logo_title" class="w-full max-w-screen-md mx-auto rounded-lg" />
+      )
+    }
+
+    <div class="flex items-center justify-center gap-2 text-3xl">
+        {
+            index_post.data.arxiv_link && (
+                <a href={index_post.data.arxiv_link} class="p-4 inline-flex items-center custom-link hover:underline">
+                <img class="mx-1.5" src="/arxiv-logomark-small.svg" width="50" height="50"/>  Arxiv
+                </a>
+                
+            )
+        }
+        {
+            index_post.data.hf_link && (
+                <a href={index_post.data.hf_link} class="p-4 inline-flex items-center custom-link hover:underline">
+                <img class="mx-1.5" src="/hf.svg" width="50" height="50"/>  Huggingface
+                </a>
+                
+            )
+        }
+        {
+            index_post.data.gh_link && (
+                <a href={index_post.data.gh_link} class="p-4 inline-flex items-center custom-link hover:underline">
+                <img class="mx-1.5" src="/github-mark.svg" width="40" height="40"/>  GitHub
+                </a>
+            )
+        }
+    </div>
+
+    {
+      index_post.data.cover && (
+        <img src={`${index_post.data.cover}`} alt="cover" class="w-full mx-auto rounded-lg" />
+      )
+    }
+  </div>
+
+
+<div class="relative flex flex-col gap-2 max-w-screen-md mx-auto px-4 sm:px-6 text-base text-zinc-700">
+    <Content post={ index_post } >
+
+</Content>
+
+<Leaderboard client:load />
+
+</div>
+
+
+</Layout>
+
+<script>
+  import { annotate, annotationGroup } from "rough-notation";
+  const notions = document.querySelectorAll("span[data-notion-identity]");
+  const annotations = new Array(notions.length).fill(0).map((_, index) => {
+    const node = notions[index] as HTMLSpanElement;
+    const type = node.dataset.notionType;
+    const color = node.dataset.notionColor;
+    const strokeWidth = node.dataset.notionStrokewidth;
+    return annotate(node, {
+      type: (type as "underline") ?? "underline",
+      color: color ?? "red",
+      animate: false,
+      multiline: type === "bracket" ? false : true,
+      brackets: ["left", "right"],
+      strokeWidth: Number(strokeWidth) ?? 1.5,
+    });
+  });
+  annotationGroup(annotations).show();
+</script>
