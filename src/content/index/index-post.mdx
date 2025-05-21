@@ -16,11 +16,11 @@ We introduce **AstroVisBench,** the first benchmark for both scientific computin
 
 
 We use the following metrics evaluate LLMs using this benchmark along these dimensions:
-- **Processing Crash %:** This is the percent of processing tasks that failed to execute without crashing. *(Lower is better)*
+- **Processing Crash %:** This is the percent of processing task responses that failed to execute without crashing. *(Lower is better)*
 - **VIscore %:** This is the Variable Inspection score, indicating how well successfully run generated code is able to create data products that match the ground truth *(Higher is better)*
-- **Visualization Crash %:** This is the percent of visualization tasks that failed to execute without crashing. *(Lower is better)*
-- **VisFail %:** This is the percent of visualization tasks that failed to follow instructions and generate only one visualization. *(Lower is better)*
-- **Visualization Errors (NoE, MiE, MaE):** This is breakdown of **No Errors**, **Minor Errors**, and **Major Errors** in the generated visualizations as determined through our automated LLM-as-a-judge method. *(Lower NoE is better)*
+- **Visualization Crash %:** This is the percent of visualization task responses that failed to execute without crashing. *(Lower is better)*
+- **VisFail %:** This is the percent of visualization task responses that failed to follow instructions and generate only one visualization. *(Lower is better)*
+- **Visualization Errors (NoE, MiE, MaE):** This is breakdown of **No Errors**, **Minor Errors**, and **Major Errors** in the set of generated visualizations as determined through our automated LLM-as-a-judge method. *(Lower NoE is better)*
 
 We present the results of evaluating several LLMs on **AstroVisBench** below in an interactive leaderboard.
 If you would like to test your models on this benchmark, you can find the code to execute and evaluate model responses in our [GitHub Repository](https://github.com/SebaJoe/AstroVisBench). 
