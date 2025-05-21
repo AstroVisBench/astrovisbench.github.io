@@ -28,7 +28,11 @@ export default function Leaderboard() {
   
   const [sorting, setSorting] = useState([{ id: 'NoE_%', desc: true }]);
 
-
+  const defaultMets = [
+    'Processing No Error %',
+    'Visualization No Error %',
+    'NoE %',
+  ]
   // Fetch data on mount
   useEffect(() => {
     fetch('/leaderboard.json')
@@ -40,12 +44,11 @@ export default function Leaderboard() {
         const uniqueMetrics = Array.from(new Set(Object.keys(json[0]).filter(item => item != "Model")));
         const metricOptions = uniqueMetrics.map(subj => ({ label: subj, value: subj }));
         //console.log(Object.keys(json).filter(item => item != "Model"));
-        console.log(uniquemodels);
-        console.log(uniqueMetrics);
+        const defaultMetSelect = uniqueMetrics.filter(item => defaultMets.includes(item));
         setmodels(modelOptions);
         setSelectedmodels(uniquemodels); // Select all by default
         setMetrics(metricOptions);
-        setSelectedMetrics(uniqueMetrics);
+        setSelectedMetrics(defaultMetSelect);
       });
   }, []);
 
@@ -54,9 +57,9 @@ export default function Leaderboard() {
   const filteredData = data.filter(item => selectedmodels.includes(item.Model));
 
   const dataset_colors = {
-    "Processing Crash %": 'rgba(59, 130, 246, 0.6)',
+    "Processing No Error %": 'rgba(59, 130, 246, 0.6)',
     "VIscore": 'rgba(165, 59, 246, 0.6)',
-    "Visualization Crash %": 'rgba(17, 227, 246, 0.6)',
+    "Visualization No Error %": 'rgba(17, 227, 246, 0.6)',
     "VisFail %": 'rgba(231, 187, 216, 0.6)',
     "NoE %": 'rgba(24, 242, 122, 0.6)',
     "MiE %": 'rgba(236, 71, 145, 0.6)',

@@ -5,13 +5,13 @@ export default function LogoSwap() {
 
   useEffect(() => {
     const scrollContainer = document.querySelector('#scroll-div');
-    console.log(scrollContainer);
+    //console.log(scrollContainer);
     const handleScroll = () => {
       const scrollContainer2 = document.querySelector('#scroll-div');
-      console.log(scrollContainer2.scrollTop);
+      //console.log(scrollContainer2.scrollTop);
       setScrolled(scrollContainer2.scrollTop > 300);
     };
-    console.log("WKJADK");
+    //console.log("WKJADK");
     scrollContainer.addEventListener('scroll', () => {handleScroll();});
     //window.addEventListener('keydown', handleScroll);
     return () => scrollContainer.removeEventListener('scroll', handleScroll);
