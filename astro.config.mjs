@@ -14,6 +14,11 @@ export default defineConfig({
     prefetchAll: true,
     defaultStrategy: "viewport",
   },
+  vite: {
+    ssr: {
+      noExternal: ['primereact']
+    }
+  },
   integrations: [
     mdx({
       syntaxHighlight: "shiki",

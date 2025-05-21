@@ -4,6 +4,9 @@ const blog = defineCollection({
   schema: z.object({
     title: z.string(),
     description: z.string(),
+    logo_title: z.string(),
+    hf_link: z.string(),
+    gh_link: z.string(),
     date: z
       .string()
       .or(z.date())
