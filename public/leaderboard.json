@@ -1,72 +1,72 @@
 [
-  {
-    "Model": "Gemini 2.5 Pro",
-    "Processing Crash %": 30.8,
-    "VIscore": 0.600,
-    "Visualization Crash %": 20.1,
-    "VisFail %": 9.3,
-    "NoE %": 15.7,
-    "MiE %": 25.9,
-    "MaE %": 28.5
-  },
-  {
-    "Model": "Claude Sonnet 3.7",
-    "Processing Crash %": 50.9,
-    "VIscore": 0.633,
-    "Visualization Crash %": 34.7,
-    "VisFail %": 21.3,
-    "NoE %": 9.5,
-    "MiE %": 14.6,
-    "MaE %": 19.2
-  },
-  {
-    "Model": "o3‑mini",
-    "Processing Crash %": 51.4,
-    "VIscore": 0.694,
-    "Visualization Crash %": 30.3,
-    "VisFail %": 2.8,
-    "NoE %": 10.4,
-    "MiE %": 26.4,
-    "MaE %": 29.6
-  },
-  {
-    "Model": "GPT‑4o",
-    "Processing Crash %": 53.7,
-    "VIscore": 0.480,
-    "Visualization Crash %": 32.6,
-    "VisFail %": 6.0,
-    "NoE %": 8.6,
-    "MiE %": 23.4,
-    "MaE %": 28.5
-  },
-  {
-    "Model": "QwQ",
-    "Processing Crash %": 64.1,
-    "VIscore": 0.472,
-    "Visualization Crash %": 60.9,
-    "VisFail %": 3.9,
-    "NoE %": 8.2,
-    "MiE %": 12.6,
-    "MaE %": 14.9
-  },
-  {
-    "Model": "Qwen‑2.5",
-    "Processing Crash %": 56.9,
-    "VIscore": 0.527,
-    "Visualization Crash %": 35.4,
-    "VisFail %": 3.7,
-    "NoE %": 10.4,
-    "MiE %": 20.1,
-    "MaE %": 29.9
-  },
-  {
-    "Model": "Llama‑4 Maverick",
-    "Processing Crash %": 55.3,
-    "VIscore": 0.546,
-    "Visualization Crash %": 28.7,
-    "VisFail %": 9.0,
-    "NoE %": 9.7,
-    "MiE %": 21.5,
-    "MaE %": 30.6
-  }
+    {
+        "Model": "Gemini 2.5 Pro",
+        "Processing No Error %": 69.2,
+        "VIscore": 0.6,
+        "Visualization No Error %": 79.9,
+        "VisFail %": 9.3,
+        "NoE %": 15.7,
+        "MiE %": 25.9,
+        "MaE %": 28.5
+    },
+    {
+        "Model": "Claude Sonnet 3.7",
+        "Processing No Error %": 49.1,
+        "VIscore": 0.633,
+        "Visualization No Error %": 65.3,
+        "VisFail %": 21.3,
+        "NoE %": 9.5,
+        "MiE %": 14.6,
+        "MaE %": 19.2
+    },
+    {
+        "Model": "o3\u2011mini",
+        "Processing No Error %": 48.6,
+        "VIscore": 0.694,
+        "Visualization No Error %": 69.7,
+        "VisFail %": 2.8,
+        "NoE %": 10.4,
+        "MiE %": 26.4,
+        "MaE %": 29.6
+    },
+    {
+        "Model": "GPT\u20114o",
+        "Processing No Error %": 46.3,
+        "VIscore": 0.48,
+        "Visualization No Error %": 67.4,
+        "VisFail %": 6.0,
+        "NoE %": 8.6,
+        "MiE %": 23.4,
+        "MaE %": 28.5
+    },
+    {
+        "Model": "QwQ",
+        "Processing No Error %": 35.9,
+        "VIscore": 0.472,
+        "Visualization No Error %": 39.1,
+        "VisFail %": 3.9,
+        "NoE %": 8.2,
+        "MiE %": 12.6,
+        "MaE %": 14.9
+    },
+    {
+        "Model": "Qwen\u20112.5",
+        "Processing No Error %": 43.1,
+        "VIscore": 0.527,
+        "Visualization No Error %": 64.6,
+        "VisFail %": 3.7,
+        "NoE %": 10.4,
+        "MiE %": 20.1,
+        "MaE %": 29.9
+    },
+    {
+        "Model": "Llama\u20114 Maverick",
+        "Processing No Error %": 44.7,
+        "VIscore": 0.546,
+        "Visualization No Error %": 71.3,
+        "VisFail %": 9.0,
+        "NoE %": 9.7,
+        "MiE %": 21.5,
+        "MaE %": 30.6
+    }
 ]
