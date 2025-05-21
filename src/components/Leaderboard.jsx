@@ -26,12 +26,12 @@ export default function Leaderboard() {
   const [metrics, setMetrics] = useState([]);
   const [selectedMetrics, setSelectedMetrics] = useState([]);
   
-  const [sorting, setSorting] = useState([{ id: 'NoE_%', desc: true }]);
+  const [sorting, setSorting] = useState([]);
 
   const defaultMets = [
     'Processing No Error %',
     'Visualization No Error %',
-    'NoE %',
+    'CorrectV %',
   ]
   // Fetch data on mount
   useEffect(() => {
@@ -61,7 +61,7 @@ export default function Leaderboard() {
     "VIscore": 'rgba(165, 59, 246, 0.6)',
     "Visualization No Error %": 'rgba(17, 227, 246, 0.6)',
     "VisFail %": 'rgba(231, 187, 216, 0.6)',
-    "NoE %": 'rgba(24, 242, 122, 0.6)',
+    "CorrectV %": 'rgba(24, 242, 122, 0.6)',
     "MiE %": 'rgba(236, 71, 145, 0.6)',
     "MaE %": 'rgba(235, 10, 134, 0.6)',
   }

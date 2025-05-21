@@ -1,3 +1,7 @@
 .p-checkbox-input {
   border: 1px solid  #C0C0C0; /* Tailwind's blue-700 */
 }   
+
+.max-w-screen-md {
+  max-width: 800px;
+}

@@ -5,7 +5,7 @@
         "VIscore": 0.6,
         "Visualization No Error %": 79.9,
         "VisFail %": 9.3,
-        "NoE %": 15.7,
+        "CorrectV %": 15.7,
         "MiE %": 25.9,
         "MaE %": 28.5
     },
@@ -15,7 +15,7 @@
         "VIscore": 0.633,
         "Visualization No Error %": 65.3,
         "VisFail %": 21.3,
-        "NoE %": 9.5,
+        "CorrectV %": 9.5,
         "MiE %": 14.6,
         "MaE %": 19.2
     },
@@ -25,7 +25,7 @@
         "VIscore": 0.694,
         "Visualization No Error %": 69.7,
         "VisFail %": 2.8,
-        "NoE %": 10.4,
+        "CorrectV %": 10.4,
         "MiE %": 26.4,
         "MaE %": 29.6
     },
@@ -35,7 +35,7 @@
         "VIscore": 0.48,
         "Visualization No Error %": 67.4,
         "VisFail %": 6.0,
-        "NoE %": 8.6,
+        "CorrectV %": 8.6,
         "MiE %": 23.4,
         "MaE %": 28.5
     },
@@ -45,7 +45,7 @@
         "VIscore": 0.472,
         "Visualization No Error %": 39.1,
         "VisFail %": 3.9,
-        "NoE %": 8.2,
+        "CorrectV %": 8.2,
         "MiE %": 12.6,
         "MaE %": 14.9
     },
@@ -55,7 +55,7 @@
         "VIscore": 0.527,
         "Visualization No Error %": 64.6,
         "VisFail %": 3.7,
-        "NoE %": 10.4,
+        "CorrectV %": 10.4,
         "MiE %": 20.1,
         "MaE %": 29.9
     },
@@ -65,7 +65,7 @@
         "VIscore": 0.546,
         "Visualization No Error %": 71.3,
         "VisFail %": 9.0,
-        "NoE %": 9.7,
+        "CorrectV %": 9.7,
         "MiE %": 21.5,
         "MaE %": 30.6
     }
