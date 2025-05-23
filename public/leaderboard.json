@@ -20,6 +20,16 @@
         "MaE %": 19.2
     },
     {
+        "Model": "Claude Opus 4.0",
+        "Processing No Error %": 49.8,
+        "VIscore": 0.644,
+        "Visualization No Error %": 66.9,
+        "VisFail %": 12.7,
+        "CorrectV %": 9.3,
+        "MiE %": 28.9,
+        "MaE %": 16.0
+    },
+    {
         "Model": "o3\u2011mini",
         "Processing No Error %": 48.6,
         "VIscore": 0.694,
