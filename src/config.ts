@@ -6,6 +6,11 @@ export const SITE_DESCRIPTION =
 
 export const MENUS = [
   {
+    title: "Paper",
+    link: "https://arxiv.org/abs/2505.20538",
+    target: "_black",
+  },
+  {
     title: "HuggingFace",
     link: "https://huggingface.co/datasets/sebajoe/AstroVisBench",
     target: "_black",
